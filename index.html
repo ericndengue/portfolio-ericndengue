@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eric Ndengue | Développeur Fullstack Python & Leadership</title>
+
+    <!-- Google Fonts -->
+     
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Stylesheets -->
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    
+
+
+    
+  </head>
+  <body>
+    <header>
+      <!-- logo -->
+      <div class="container navbar">
+        <a href="#home" class="logo">HD <span> | HAvila Digital</span></a>
+
+        <!-- Bouton Hamburger visible uniquement sur mobile -->
+        <div class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- // navigation bar-->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#havila">Havila Digital</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Section hero -->
+    <main>
+      <section id="home" class="container hero">
+        <div class="hero-text">
+          <h1>Empowering leaders & Building <span class="highlight">
+            Digital Features</span></h1>
+          <p class="hero-subtitle">
+            Fullstack Python Developer | Leadership Trainer | Founder of Havila
+            Digital.
+          </p>
+           <div class="hero-buttons">
+          <a href="#projects" class="btn-gold">View my Work</a>
+          <a href="#about" class="btn-outline">Learn About Leadership</a>
+        </div>
+        </div>
+      
+       
+        <div class="hero-image">
+          <div class="profile-frame">
+            <img
+              src="./assets/images/projects/my-profile.png"
+              alt="Eric Ndengue"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- LES SECTIONS QUI MANQUE À FAIRE;
+       
+        /* SECTION ABOUT ME & Double Appel (Tech + Leadership)*/
+        /* SECTION HAVILA DIGITAL */
+        /* SECTION SKILLS */
+        /* SECTION HAVILA DIGITAL SERVICES  */
+        /* SECTION FEATURES WORK */
+        /* SECTION CLIENTS  */
+        /* SECTION CONTACT : HIRE ME */
+        /* SECTION FOOTER  */
+        -->
+
+      <!-- <section id="about" class="container">
+        <h2>À propos de moi</h2>
+        <p>
+          Je suis un développeur Fullstack passionné par la création
+          d'applications web performantes et évolutives. Avec une expertise en
+          Python et en leadership ministériel/chrétien, je forme les ministres
+          du cultes à devenir des Leaders selon le Coeur de Dieu. Mon objectif
+          est de combiner mes compétences techniques et mon expérience en
+          leadership pour aider les équipes à atteindre le succès tout en
+          développant des solutions innovantes.
+        </p>
+      </section>
+      <section id="havila" class="container">
+        <h2>Havila Digital</h2>
+        <p>
+          Havila Digital est une entreprise que j'ai fondée pour aider les
+          organisations à tirer parti de la technologie et du leadership
+          ministériel. Nous offrons des services de développement web, de
+          formation en leadership et de conseil stratégique pour aider nos
+          clients à atteindre leurs objectifs.
+        </p>
+      <section id="skills">
+        <h2>Compétences</h2>
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>HTML/CSS</li>
+          <li>Leadership</li>
+        </ul>
+      </section>
+    </main> -->
+
+    <!-- Petit script JS pour le menu mobile -->
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        menuToggle.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", isOpen);
+      });
+
+      // Ferme le menu automatiquement quand on clique sur un lien
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          menuToggle.classList.remove("open");
+        });
+      });
+    </script>
+  </body>
+</html>
